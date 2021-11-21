@@ -1,0 +1,16 @@
+version: "3.9"
+services: 
+  client: 
+    container_name: client
+    image: client
+    ports: 
+      - 3000:3000 
+    build:
+      context: ./client 
+  server: 
+    container_name: server
+    image: server 
+    ports: 
+      - 8000:8000 
+    build: 
+      context: ./server 
