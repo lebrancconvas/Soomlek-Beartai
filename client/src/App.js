@@ -1,13 +1,17 @@
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
 import Settings from './pages/Settings'; 
 import Questions from './pages/Questions'; 
 import FinalScreen from './pages/FinalScreen'; 
 
 const App = () => (
   <div> 
-    <h1>Hello World.</h1> 
-    <Settings /> 
-    <Questions /> 
-    <FinalScreen /> 
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Settings />}/> 
+        <Route exact path="/questions" element={<Questions />} />  
+        <Route exact path="/finalscreen" element={<FinalScreen />} />    
+      </Routes> 
+    </Router> 
   </div>
 );
 
