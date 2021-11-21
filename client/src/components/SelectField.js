@@ -9,14 +9,14 @@ const SelectField = props  => {
 		return (
 		<div>
 			<Box mt={3} width="100%">
-				<FormControl>
+				<FormControl size="small" fullWidth>  
 					<InputLabel>
 						{label} 	
 					</InputLabel> 
 					<Select value={value} label={label} onChange={handleChange}>
-						<MenuItem></MenuItem>
-						<MenuItem></MenuItem>
-						<MenuItem></MenuItem>
+						<MenuItem>Option 1</MenuItem>
+						<MenuItem>Option 2</MenuItem>
+						<MenuItem>Option 3</MenuItem> 
 					</Select>
 				</FormControl>
 			</Box>

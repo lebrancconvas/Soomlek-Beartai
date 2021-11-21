@@ -1,5 +1,6 @@
 import React from 'react'; 
-import {Typography} from '@mui/material'; 
+import {Typography, Button} from '@mui/material'; 
+import {Box} from '@mui/system';  
 import SelectField from '../components/SelectField'; 
 
 const Settings = () => (
@@ -10,7 +11,14 @@ const Settings = () => (
 		<Typography variant="h5">
 			Setting App. 
 		</Typography>
-		<SelectField label="category" /> 
+		<SelectField label="Category" />  
+		<SelectField label="Difficulty" />
+		<SelectField label="Type" /> 
+		<Box mt={3} width="100%"> 
+			<Button fullWidth variant="contained" type="submit"> 
+				Get Started. 
+			</Button>
+		</Box>
 	</div>
 )
 
