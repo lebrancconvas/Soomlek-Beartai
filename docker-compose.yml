@@ -7,6 +7,7 @@ services:
       - 3000:3000 
     build:
       context: ./client 
+    restart: always 
   server: 
     container_name: server
     image: server 
@@ -14,3 +15,10 @@ services:
       - 8000:8000 
     build: 
       context: ./server 
+  dashboard: 
+    container_name: dashboard 
+    image: dashboard 
+    ports: 
+      - 5000:5000 
+    build: 
+      context: ./dashboard 
