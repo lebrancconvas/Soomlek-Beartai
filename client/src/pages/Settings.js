@@ -7,7 +7,8 @@ import useAxios from "../hooks/useAxios";
 import {useNavigate} from "react-router-dom";  
 
 const Settings = () => {
-  const { response, error, loading } = useAxios({ url: "/api_category.php" }); 
+  const { response, error, loading } = useAxios({ url: "http://127.0.0.1:8000/api" });   
+	console.log(response); 
 	const navigate = useNavigate(); 
 
 	if(loading) {
