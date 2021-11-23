@@ -37,7 +37,7 @@ const Questions = () => {
         <Box mt={2}>
           <Button variant="contained"> {QuestionsData[numberQuestion].answers[3]} </Button> 
         </Box> 
-        <Box mt={5}>Score: 1 / 6 </Box> 
+        <Box mt={5}>Score: 1 / {amount_of_question}</Box>  
       </Box> 
     </div>
   );
