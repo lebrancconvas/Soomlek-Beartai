@@ -16,4 +16,10 @@
     "question": "x + 2 = 5; What is x?",
     "answers": ["1", "2", "3", "4"],
     "correct_answer": "3"
+}, {
+    "id": 4,
+    "category": "Linear Algebra",
+    "question": "x + 10 = 20; What is x?",
+    "answers": ["10", "20", "30", "40"],
+    "correct_answer": "10"
 }]
