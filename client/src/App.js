@@ -1,25 +1,26 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'; 
-import Settings from './pages/Settings'; 
-import Questions from './pages/Questions'; 
-import FinalScreen from './pages/FinalScreen'; 
-import {Container} from '@mui/material'; 
-import {Box} from '@mui/system'; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Settings from "./pages/Settings";
+import Questions from "./pages/Questions";
+import FinalScreen from "./pages/FinalScreen";
+import Login from "./pages/Login";
+import { Container } from "@mui/material";
+import { Box } from "@mui/system";
 
 const App = () => (
-  <div> 
+  <div>
     <Router>
-      <Container maxWidth="sm"> 
-        <Box textAlign="center" mt={5}> 
+      <Container maxWidth="sm">
+        <Box textAlign="center" mt={5}>
           <Routes>
-            <Route exact path="/" element={<Settings />}/> 
-            <Route exact path="/questions" element={<Questions />} />  
-            <Route exact path="/finalscreen" element={<FinalScreen />} />    
-          </Routes> 
+            <Route exact path="/" element={<Settings />} />
+            <Route exact path="/login" element={<Login />} /> 
+            <Route exact path="/questions" element={<Questions />} />
+            <Route exact path="/finalscreen" element={<FinalScreen />} />
+          </Routes>
         </Box>
       </Container>
-    </Router> 
+    </Router>
   </div>
 );
-
 
 export default App;
