@@ -27,22 +27,22 @@ const Settings = () => {
 	}
 
 	const categoryOptions = [
-		{id: "gadget", name: "Gadget"},
-		{id: "social", name: "Social Media"},
-		{id: "programming", name: "Programming"},
-		{id: "game", name: "Video Game"},
-		{id: "app", name: "Application"}  
+		{id: "trigonometry", name: "Trigonometry"},
+		{id: "calculas", name: "Calculas"},
+		{id: "linear", name: "Linear Algebra"},
+		{id: "matrixvector", name: "Matrix & Vector"},
+		{id: "combiprob", name: "Combinatoric & Probability"}   
 	] 
 	
-	const difficultyOptions = [
-		{id: "easy", name: "Easy"}, 
-		{id: "medium", name: "Medium"}, 
-		{id: "hard", name: "Hard"} 
-	]
-	const typeOptions = [
-		{id: "multiple", name: "Multiple Choice."}, 
-		{id: "boolean", name: "True / False"} 
-	] 
+	// const difficultyOptions = [
+	// 	{id: "easy", name: "Easy"}, 
+	// 	{id: "medium", name: "Medium"}, 
+	// 	{id: "hard", name: "Hard"} 
+	// ]
+	// const typeOptions = [
+	// 	{id: "multiple", name: "Multiple Choice."}, 
+	// 	{id: "boolean", name: "True / False"} 
+	// ] 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,15 +50,13 @@ const Settings = () => {
   };
   return (
     <div>
-			<img src="./assets/beartai_logo.png" alt="beartai" /> 
       <Typography variant="h2" fontWeight="bold">
-        Beartai ITQ
+        Select Mode 
       </Typography>
-      <Typography variant="h5">Setting App. </Typography>
       <form onSubmit={handleSubmit}>
         <SelectField options={categoryOptions} label="Category" /> 
-        <SelectField options={difficultyOptions} label="Difficulty" />
-        <SelectField options={typeOptions} label="Type" /> 
+        {/* <SelectField options={difficultyOptions} label="Difficulty" /> */}
+        {/* <SelectField options={typeOptions} label="Type" />  */}
         <TextFieldComp />
         <Box mt={3} width="100%">
           <Button fullWidth variant="contained" type="submit">
