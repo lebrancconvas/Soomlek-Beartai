@@ -8,14 +8,14 @@ services:
     build:
       context: ./client 
     restart: always 
-  server: 
+  api: 
     container_name: api  
     image: api 
     ports: 
       - 8000:8000 
     build: 
       context: ./api 
-  dashboard: 
+  admin:  
     container_name: admin  
     image: admin  
     ports: 
