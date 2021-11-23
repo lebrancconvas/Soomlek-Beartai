@@ -8,6 +8,10 @@ const TextFieldComp = () => {
 	const dispatch = useDispatch(); 
   const handleChange = e => {
 		dispatch(handleAmountChange(e.target.value)); 
+    if(e.target.value <= 0 && e.target.value !== null) {  
+      alert("Cannot assign this number.");  
+      e.target.value = 1; 
+    }
 	};
   return (
     <div>
