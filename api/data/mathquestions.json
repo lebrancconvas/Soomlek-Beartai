@@ -22,4 +22,10 @@
     "question": "x + 10 = 20; What is x?",
     "answers": ["10", "20", "30", "40"],
     "correct_answer": "10"
+}, {
+    "id": 5,
+    "category": "Calculas",
+    "question": "What is the differentiate of x^2",
+    "answers": ["2x", "3x", "x^3", "x^2"],
+    "correct_answer": "2x"
 }]
