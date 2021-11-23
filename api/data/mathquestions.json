@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "category": "Trigonometry",
+    "question": "What is sin(0 degrees)?",
+    "answers": ["0", "1", "0.414", "0.732"],
+    "correct_answer": "0"
+}, {
+    "id": 2,
+    "category": "Trigonometry",
+    "question": "What is cos(90 degrees)?",
+    "answers": ["0", "1", "0.414", "0.732"],
+    "correct_answer": "0"
+}, {
+    "id": 3,
+    "category": "Linear Algebra",
+    "question": "x + 2 = 5; What is x?",
+    "answers": ["1", "2", "3", "4"],
+    "correct_answer": "3"
+}]
