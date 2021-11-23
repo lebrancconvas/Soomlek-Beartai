@@ -42,6 +42,24 @@ const QuestionsData = [{
         "question": "What is the programming language that is considered to be the lowest-level language?",
         "answers": ["C", "C++", "Assembly", "COBOL"],
         "correct_answer": "Assembly"
+    },
+    {
+        "id": 6,
+        "category": "Gadget",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "question": "What is the first front camera phone brand?",
+        "answers": ["iPhone", "Samsung", "Kyocera", "HTC"],
+        "correct_answer": "Kyocera"
+    },
+    {
+        "id": 7,
+        "category": "Programming",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "question": "Who is the creator of Python Language?",
+        "answers": ["Linus Torvalds", "Guido van Rossum", "Yukihiro Matsumoto", "Gabe Newell"],
+        "correct_answer": "Guido van Rossum"
     }
 ]
 
