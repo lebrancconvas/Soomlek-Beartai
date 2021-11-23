@@ -9,12 +9,12 @@ services:
       context: ./client 
     restart: always 
   server: 
-    container_name: server
-    image: server 
+    container_name: api  
+    image: api 
     ports: 
       - 8000:8000 
     build: 
-      context: ./server 
+      context: ./api 
   dashboard: 
     container_name: admin  
     image: admin  

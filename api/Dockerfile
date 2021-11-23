@@ -1,5 +1,5 @@
 FROM node:lts-alpine 
-WORKDIR /server 
+WORKDIR /api  
 COPY package.json . 
 COPY yarn.lock . 
 RUN yarn install 
