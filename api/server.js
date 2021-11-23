@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
+const mathquestions = require('./data/mathquestions.json');
 
-app.get('/', (req, res) => {
-    res.send("This is a backend.");
+app.use(express.static('public'));
+
+app.get('/api', (req, res, next) => {
+    res.send(mathquestions);
 })
 
 app.listen(port, () => {
