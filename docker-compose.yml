@@ -16,9 +16,9 @@ services:
     build: 
       context: ./server 
   dashboard: 
-    container_name: dashboard 
-    image: dashboard 
+    container_name: admin  
+    image: admin  
     ports: 
       - 5000:5000 
     build: 
-      context: ./dashboard 
+      context: ./admin  
